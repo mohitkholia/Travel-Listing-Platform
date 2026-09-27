@@ -110,7 +110,10 @@ body {
     width: 40vw;
 }
 
+/* TABLET */
+
 @media (max-width: 991px) {
+
     .navbar-collapse {
         background-color: white;
         padding: 1rem;
@@ -138,9 +141,30 @@ body {
     .show-img {
         height: 45vh;
     }
+
+    /* SHOW LISTING */
+
+    .row.mt-3>.col-8.offset-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .row.mt-3>.card.col-6.offset-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* REVIEWS */
+
+    .row.mt-3 .card.col-5 {
+        width: 45%;
+    }
 }
 
+/* MOBILE */
+
 @media (max-width: 576px) {
+
     body {
         overflow-x: hidden;
     }
@@ -170,7 +194,26 @@ body {
 
     .show-img {
         height: 250px;
+        width: 100%;
+        object-fit: cover;
     }
+
+    /* SHOW LISTING */
+
+    .row.mt-3>.col-8.offset-3,
+    .row.mt-3>.card.col-6.offset-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* REVIEWS */
+
+    .row.mt-3 .card.col-5 {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    /* BUTTONS */
 
     .btns {
         flex-direction: column;
@@ -181,16 +224,16 @@ body {
         width: 100%;
     }
 
-    #map {
-        width: 100%;
-        height: 300px;
-    }
+
+    /* FOOTER */
 
     .footerOuter {
         height: auto;
         min-height: 10rem;
         padding: 1.5rem 1rem;
     }
+
+    /* TAX SWITCH */
 
     .icon-top {
         align-items: center;
@@ -204,5 +247,15 @@ body {
     .tax-switch {
         font-size: 0.7rem;
         padding: 0.25rem 0.6rem;
+    }
+
+    .row .col-8.offset-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
     }
 }

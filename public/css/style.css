@@ -191,4 +191,18 @@ body {
         min-height: 10rem;
         padding: 1.5rem 1rem;
     }
+
+    .icon-top {
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .icon-top p {
+        font-size: 1.5rem;
+    }
+
+    .tax-switch {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.6rem;
+    }
 }
